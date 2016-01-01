@@ -53,3 +53,4 @@ window.angular && (function (angular) {
 
 # Step 03 - Routing
 
+- Passage à la version 1.4.8 d'*AngularJS* et ajout de la dépendance au routing. Voir https://code.angularjs.org/ pour toutes les versions d'*AngularJS*.
