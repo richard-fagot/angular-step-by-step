@@ -55,3 +55,4 @@ window.angular && (function (angular) {
 
 - Passage à la version 1.4.8 d'*AngularJS* et ajout de la dépendance au routing. Voir https://code.angularjs.org/ pour toutes les versions d'*AngularJS* ;
 - Initialisation de l'arborescence du projet inspirée de https://scotch.io/tutorials/angularjs-best-practices-directory-structure ; 
+- Mise en place du routing : 

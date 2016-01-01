@@ -9,10 +9,10 @@
 
 <body ng-app="myapp">
 
-   <div ng-controller="HelloController">
-      <h2>Hello {{title}} !</h2>
-   </div>
+   <div ng-view></div>
 
-   <script src="app.js"></script>
+   <script src="app/app-module.js"></script>
+   <script src="app/app-routes.js"></script>
+   <script src="app/components/home/homeController.js"></script>
 </body>
 </html>
