@@ -37,3 +37,10 @@ Refaire les mêmes étapes mais en sélectionnant la balise `<div>`.
 On a toujours un *scope* mais cette fois il a un parent et surtout, on peut y voir l'attribut `title` défini dans `$scope.title`.
 
 Si on enlève l'attibut `ng-app`, tous les scopes disparaissent.
+
+# Step 02 - Modularize
+
+Cette étape permet d'externaliser le javascript dans un fichier dédié et de commencer à appliquer quelques bonnes pratiques de la programmation Web et AngularJS :
+
+- javascript en [*mode strict*](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode) ;
+- 
