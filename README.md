@@ -22,7 +22,7 @@ On y découvre déjà les notions de :
 - **ng-app**, pour déclarer le point d'entrée de prise en charge par *AngularJS* ;
 - **ng-controller**, qui indique quel controlleur utiliser (défini dans la partie script) ;
 - **$scope** qui contient, ici, la valeur dynamique à afficher dans la page HTML ;
-- expression reconnaissable à ses moustaches **{{ }}**, qui permet de lire une valeur dans le scope.
+- expression reconnaissable à ses moustaches '**{{ }}**', qui permet de lire une valeur dans le scope.
 
 ## Petite balade dans les entrailles du système
 
@@ -37,3 +37,16 @@ Refaire les mêmes étapes mais en sélectionnant la balise `<div>`.
 On a toujours un *scope* mais cette fois il a un parent et surtout, on peut y voir l'attribut `title` défini dans `$scope.title`.
 
 Si on enlève l'attibut `ng-app`, tous les scopes disparaissent.
+
+# Step 02 - Modularize
+
+Cette étape permet d'externaliser le javascript dans un fichier dédié et de commencer à appliquer quelques bonnes pratiques de la programmation Web et AngularJS :
+
+- Javascript en [*'mode strict'*](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode) ;
+- Protection du code en l'encapsulant dans une déclaration qui permet de s'assurer qu'il n'entrera pas en conflit avec un autre framework/dépendance :
+
+```javascript
+window.angular && (function (angular) {
+    ...
+})(window.angular);
+```
