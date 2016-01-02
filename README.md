@@ -55,4 +55,6 @@ window.angular && (function (angular) {
 
 - Passage à la version 1.4.8 d'*AngularJS* et ajout de la dépendance au routing. Voir https://code.angularjs.org/ pour toutes les versions d'*AngularJS* ;
 - Initialisation de l'arborescence du projet inspirée de https://scotch.io/tutorials/angularjs-best-practices-directory-structure ; 
-- Mise en place du routing : 
+- Mise en place du routing : la [**directive**](https://docs.angularjs.org/guide/directive) `ng-view` dans *index.html* est remplie avec le contenu du `templateUrl` défini dans le routeur *app-routes.js* en l'associant au `controller` correspondant lorsque dans l'url on tape `http://localhost:8080/index.html#/home`. *AngularJS* "écoute" la barre d'adresse et lorsqu'il détecte le **#** (ancre HTML) il applique les règles du routeur pour afficher la bonne page et manipule l'[historique HTML 5](https://developer.mozilla.org/en-US/docs/Web/API/History_API) pour insérer cette action dans l'historique du navigateur. Le fichier *app-module.js* contient la définition et la configuration de notre module.
+
+En manipulant la console du navigateur on retrouve bien nos scopes parent et celui associé au controlleur.
