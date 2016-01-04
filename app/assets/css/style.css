@@ -1,0 +1,19 @@
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    background: deepskyblue;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.navigation a:hover {
+    background: #00b7f5;
+}

@@ -8,6 +8,9 @@ window.angular && (function (angular) {
       when('/', {
         templateUrl: 'app/components/home/homeView.html',
         controller: 'HelloController'
+      }).when('/signin', {
+            templateUrl: 'app/components/signin/signinView.html',
+            controller: 'SigninController'
       })
       .otherwise({
         redirectTo: '/'
