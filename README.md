@@ -63,4 +63,5 @@ En manipulant la console du navigateur on retrouve bien nos scopes parent et cel
 
 Illustration de l'utilisation d'une navigation en mode SPA (Single Page Application).
 
-- Mise en place du routing pour accéder à la page d'authentification ;
+- Mise en place du routing pour accéder à la page d'authentification (accessible en ajoutant *#/signin* à la fin de l'url);
+- Ajout d'une barre de navigation en la formattant avec [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Attention, dans les `href` il faut préfixer les routes par **#** : `<a href="#/signin">Sign In</a>` ;
