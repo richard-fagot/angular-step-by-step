@@ -1,1 +1,7 @@
 <h2>Hey, it's time to sign in !</h2>
+
+<form name="signin-form" ng-submit="signin()">
+    <input type="text" placeholder="Email" name="email" ng-model="user.email"/>
+    <input type="password" placeholder="Password" name="password" ng-model="user.password"/>
+   	<button type="submit">Sign In</button>
+</form>
