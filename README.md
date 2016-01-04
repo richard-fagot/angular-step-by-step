@@ -58,3 +58,9 @@ window.angular && (function (angular) {
 - Mise en place du routing : la [**directive**](https://docs.angularjs.org/guide/directive) `ng-view` dans *index.html* est remplie avec le contenu du `templateUrl` défini dans le routeur *app-routes.js* en l'associant au `controller` correspondant lorsque dans l'url on tape `http://localhost:8080/index.html#/home`. *AngularJS* "écoute" la barre d'adresse et lorsqu'il détecte le **#** (ancre HTML) il applique les règles du routeur pour afficher la bonne page et manipule l'[historique HTML 5](https://developer.mozilla.org/en-US/docs/Web/API/History_API) pour insérer cette action dans l'historique du navigateur. Le fichier *app-module.js* contient la définition et la configuration de notre module.
 
 En manipulant la console du navigateur on retrouve bien nos scopes parent et celui associé au controlleur.
+
+#Step 04 - Sign in page
+
+Illustration de l'utilisation d'une navigation en mode SPA (Single Page Application).
+
+- Mise en place du routing pour accéder à la page d'authentification ;
