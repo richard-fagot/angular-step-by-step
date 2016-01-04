@@ -2,17 +2,26 @@
 <html lang="en">
 
 
-<head>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+<link>
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="app/assets/css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
 </head>
 
 <body ng-app="myapp">
 
-   <div ng-view></div>
+<nav>
+    <ul class="navigation">
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/signin">Sign In</a></li>
+    </ul>
+</nav>
 
-   <script src="app/app-module.js"></script>
-   <script src="app/app-routes.js"></script>
-   <script src="app/components/home/homeController.js"></script>
+<div ng-view></div>
+
+<script src="app/app-module.js"></script>
+<script src="app/app-routes.js"></script>
+<script src="app/components/home/homeController.js"></script>
+<script src="app/components/signin/signinController.js"></script>
 </body>
 </html>

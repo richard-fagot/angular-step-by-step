@@ -58,3 +58,11 @@ window.angular && (function (angular) {
 - Mise en place du routing : la [**directive**](https://docs.angularjs.org/guide/directive) `ng-view` dans *index.html* est remplie avec le contenu du `templateUrl` défini dans le routeur *app-routes.js* en l'associant au `controller` correspondant lorsque dans l'url on tape `http://localhost:8080/index.html#/home`. *AngularJS* "écoute" la barre d'adresse et lorsqu'il détecte le **#** (ancre HTML) il applique les règles du routeur pour afficher la bonne page et manipule l'[historique HTML 5](https://developer.mozilla.org/en-US/docs/Web/API/History_API) pour insérer cette action dans l'historique du navigateur. Le fichier *app-module.js* contient la définition et la configuration de notre module.
 
 En manipulant la console du navigateur on retrouve bien nos scopes parent et celui associé au controlleur.
+
+#Step 04 - Sign in page
+
+Illustration de l'utilisation d'une navigation en mode SPA (Single Page Application). Ajout d'une route et initialisation de l'intégration d'un formulaire.
+
+- Mise en place du routing pour accéder à la page d'authentification (accessible en ajoutant *#/signin* à la fin de l'url);
+- Ajout d'une barre de navigation en la formattant avec [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Attention, dans les `href` il faut préfixer les routes par **#** : `<a href="#/signin">Sign In</a>` ;
+- Ajout d'un formulaire pour l'authentification : les champs sont mappés sur un `ng-model` contenu dans le controlleur de la page *signinView.html*. 
