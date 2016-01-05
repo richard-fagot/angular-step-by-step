@@ -66,3 +66,11 @@ Illustration de l'utilisation d'une navigation en mode SPA (Single Page Applicat
 - Mise en place du routing pour accéder à la page d'authentification (accessible en ajoutant *#/signin* à la fin de l'url);
 - Ajout d'une barre de navigation en la formattant avec [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Attention, dans les `href` il faut préfixer les routes par **#** : `<a href="#/signin">Sign In</a>` ;
 - Ajout d'un formulaire pour l'authentification : les champs sont mappés sur un `ng-model` contenu dans le controlleur de la page *signinView.html*. 
+
+# Step 05 - Ajax
+
+- Ajout d'un petit serveur *node.js* pour réaliser l'authentification en Ajax via un service REST (dans le répertoire server*), à lancer depuis le répertoire *server* : `node server.js`;
+- Déplacement de *index.html* dans *app* (tous les fichiers de l'applications se retrouvent dans *app*) ;
+
+L'appel Ajax s'effectue grâce à `$http.get()` qui retourne une promesse (). La gestion des erreurs est faite avec `catch()` qui permet de gérer les erreurs liées à la `error()` de la promesse `then(success, error)`  mais également aux exceptions générées par le `success()`.
+

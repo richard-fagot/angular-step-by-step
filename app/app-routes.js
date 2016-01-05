@@ -6,10 +6,10 @@ window.angular && (function (angular) {
   function($routeProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'app/components/home/homeView.html',
+        templateUrl: 'components/home/homeView.html',
         controller: 'HelloController'
       }).when('/signin', {
-            templateUrl: 'app/components/signin/signinView.html',
+            templateUrl: 'components/signin/signinView.html',
             controller: 'SigninController'
       })
       .otherwise({
