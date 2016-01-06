@@ -74,3 +74,9 @@ Illustration de l'utilisation d'une navigation en mode SPA (Single Page Applicat
 
 L'appel Ajax s'effectue grâce à `$http.get()` qui retourne une promesse (). La gestion des erreurs est faite avec `catch()` qui permet de gérer les erreurs liées à la `error()` de la promesse `then(success, error)`  mais également aux exceptions générées par le `success()`.
 
+# Step 06 - Services
+
+Extraction de l'appel Ajax du controlleur pout le placer dans un service dédié.
+
+- Le service est créé via `module.factory()` (cf. http://stackoverflow.com/questions/15666048/angularjs-service-vs-provider-vs-factory) ;
+

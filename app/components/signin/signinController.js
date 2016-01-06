@@ -3,17 +3,22 @@ window.angular && (function (angular) {
     'use strict';
 
     angular.module('myapp')
-        .controller('SigninController', function($scope, $http) {
+        .controller('SigninController', function($scope, $http, SigninService, $log) {
             $scope.user = {};
-            $scope.authenticated = false;
+            $scope.user.email = undefined;
+            $scope.user.password = undefined;
 
             $scope.signin = function() {
-                $http.get('http://localhost:8081/auth/'+$scope.user.email)
-                .then(function(succ){
-                    $scope.authenticated = succ.data.authenticated;
+                SigninService.signin($scope.user.email, $scope.user.password)
+                .then(function(response){
+                    if(response.authenticated === true) {
+                        $log.info('User authentified');
+                    } else {
+                        
+                    }
                 })
                 .catch(function(err) {
-                    $scope.authenticated = false;
+                    $log.info('User not authentified');
                 });
             }
         } );
